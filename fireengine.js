@@ -10,5 +10,5 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-firebase.performance();
+var analy = firebase.analytics();
+var perf = firebase.performance();
