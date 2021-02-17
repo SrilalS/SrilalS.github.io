@@ -15,8 +15,8 @@
           <h2>Developer | Open-Source Enthusiast | Thinker</h2>
           <v-row no-gutters justify="center">
             <v-btn
-                max-width="128"
-                min-width="128"
+                :max-width="btnWidth"
+                :min-width="btnWidth"
                 style="margin: 2px"
                 color="#FF2B2B"
                 dark
@@ -27,8 +27,8 @@
             </v-btn>
 
             <v-btn
-                max-width="128"
-                min-width="128"
+                :max-width="btnWidth"
+                :min-width="btnWidth"
                 style="margin: 2px"
                 color="#FF2B2B"
                 dark
@@ -39,8 +39,8 @@
             </v-btn>
 
             <v-btn
-                max-width="128"
-                min-width="128"
+                :max-width="btnWidth"
+                :min-width="btnWidth"
                 style="margin: 2px"
                 color="#FF2B2B"
                 dark
@@ -52,8 +52,8 @@
             </v-btn>
 
             <v-btn
-                max-width="128"
-                min-width="128"
+                :max-width="btnWidth"
+                :min-width="btnWidth"
                 style="margin: 2px"
                 color="#FF2B2B"
                 dark
@@ -62,6 +62,18 @@
                 href="https://github.com/SrilalS"
             >
               Github
+            </v-btn>
+            <v-btn
+                :max-width="btnWidth"
+                :min-width="btnWidth"
+                style="margin: 2px"
+                color="#FF2B2B"
+                dark
+                large
+                target="_blank"
+                href="https://www.linkedin.com/in/srilalsachintha/"
+            >
+              LinkedIn
             </v-btn>
           </v-row>
         </v-col>
@@ -107,7 +119,12 @@
 
 <script>
 export default {
-  name: "MainPage"
+  name: "MainPage",
+  data(){
+    return{
+      btnWidth: 100,
+    }
+  }
 }
 </script>
 

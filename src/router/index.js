@@ -2,10 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Resume from "@/components/Resume";
 import Projects from "@/components/Projects";
+import Home from "@/components/Home";
 
 Vue.use(VueRouter)
 
 const routes = [
+  { path: '/', component: Home },
   { path: '/resume', component: Resume },
   { path: '/projects', component: Projects },
 ]
