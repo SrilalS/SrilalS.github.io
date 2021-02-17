@@ -26,7 +26,7 @@ html {
   overflow-y: auto;
 }
 
-.v-card__text, .v-card__title {
+.v-card__text, .v-card__title, .nameTitle {
   word-break: normal; /* maybe !important  */
 }
 

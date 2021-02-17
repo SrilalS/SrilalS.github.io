@@ -11,7 +11,7 @@
       </v-row>
       <v-card>
         <v-col style="color: #FF2B2B;text-align: center;font-family: 'KoHo', sans-serif; ">
-          <h1 style="font-size: 72px">Srilal Sachintha</h1>
+          <h1 class="nameTitle" style="font-size: 64px">Srilal Sachintha</h1>
           <h2>Developer | Open-Source Enthusiast | Thinker</h2>
           <v-row no-gutters justify="center">
             <v-btn

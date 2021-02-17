@@ -83,6 +83,12 @@
                 <li>HTML</li>
                 <li>CSS</li>
               </ul>
+              <ul>
+                <li>MongoDB</li>
+                <li>mySQL</li>
+                <li>SQL Server</li>
+                <li>FireStore</li>
+              </ul>
             </v-row>
           </v-card-text>
         </v-card>
