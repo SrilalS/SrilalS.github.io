@@ -7,8 +7,8 @@
           <v-card-title>{{project.Name}}</v-card-title>
           <v-card-text>{{project.Description}}</v-card-text>
           <v-card-actions>
-            <v-btn rel="noreferrer noopener" target="_blank" dark color="#FF2B2B" :href="project.GitHub">GitHub</v-btn>
-            <v-btn rel="noreferrer noopener" target="_blank" v-if="project.LINKS.LINK !==''" dark color="#FF2B2B" :href="project.LINKS.LINK">{{ project.LINKS.Text }}</v-btn>
+            <v-btn outlined rel="noreferrer noopener" target="_blank" dark color="#FF2B2B" :href="project.GitHub">GitHub</v-btn>
+            <v-btn outlined rel="noreferrer noopener" target="_blank" v-if="project.LINKS.LINK !==''" dark color="#FF2B2B" :href="project.LINKS.LINK">{{ project.LINKS.Text }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
