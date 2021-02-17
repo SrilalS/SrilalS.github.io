@@ -57,6 +57,24 @@ export default {
             'LINK':'XX',
             'Text':'Google Play'
           }
+        },
+        {
+          'Name':'Advanced Ad Blocker',
+          'Description':'Simplified Host File Based Ad Blocking',
+          'GitHub':'LINKHERE',
+          'LINKS':{
+            'LINK':'',
+            'Text':''
+          }
+        },
+        {
+          'Name':'Foodie',
+          'Description':'A University REST API Project',
+          'GitHub':'LINKHERE',
+          'LINKS':{
+            'LINK':'',
+            'Text':''
+          }
         }
       ]
     }

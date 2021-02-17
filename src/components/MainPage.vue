@@ -3,8 +3,8 @@
 
     <v-col>
       <v-row justify="center">
-        <v-avatar size="256" style="z-index: 3200; margin-bottom: -16px">
-          <v-img src="assets/Profile.jpeg"></v-img>
+        <v-avatar color="#FF2B2B"  size="256" style="z-index: 3200; margin-bottom: -16px; border-color: #FF2B2B; border-width: 2px">
+          <v-img  src="assets/Profile.jpeg"></v-img>
         </v-avatar>
       </v-row>
       <v-card>
