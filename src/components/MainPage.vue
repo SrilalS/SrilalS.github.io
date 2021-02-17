@@ -83,7 +83,7 @@
       </v-card>
 
 
-      <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="247" min-height="248">
+      <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="256" min-height="248">
         <v-card-title><template><v-icon>mdi-pin</v-icon></template> Pinned Items</v-card-title>
 
         <v-card-text>
@@ -114,7 +114,7 @@
     </v-col>
 
 
-    <v-col>
+    <v-col v-if="this.$route.path !== '/x'">
         <router-view></router-view>
     </v-col>
   </v-container>
