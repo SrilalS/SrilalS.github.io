@@ -34,7 +34,7 @@ export default {
         {
           'Name':'BloodyFX',
           'Description':'An OpenSource Portfolio Template made using VueJs and Vuetify. This Site is made with it ❤',
-          'GitHub':'LINKHERE',
+          'GitHub':'https://github.com/SrilalS/SrilalS.github.io',
           'LINKS':{
             'LINK':'',
             'Text':''
