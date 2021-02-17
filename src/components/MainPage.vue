@@ -21,7 +21,7 @@
                 color="#FF2B2B"
                 dark
                 large
-                to="/projects"
+                to="/"
             >
               Projects
             </v-btn>
