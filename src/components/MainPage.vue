@@ -21,9 +21,9 @@
                 color="#FF2B2B"
                 dark
                 large
-                to="/resume"
+                to="/projects"
             >
-              Resume
+              Projects
             </v-btn>
 
             <v-btn
@@ -33,9 +33,9 @@
                 color="#FF2B2B"
                 dark
                 large
-                to="/projects"
+                to="/resume"
             >
-              Projects
+              Resume
             </v-btn>
 
             <v-btn
@@ -83,7 +83,7 @@
       </v-card>
 
 
-      <v-card v-if="this.$route.path !== '/'" style="margin-top: 16px" class="hidden-md-and-down" max-height="256" min-height="248">
+      <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="256" min-height="248">
         <v-card-title style="font-size: 32px; color: #FF2B2B"><template><v-icon color="#FF2B2B">mdi-pin</v-icon></template>Pinned</v-card-title>
 
         <v-card-text>
@@ -114,7 +114,7 @@
     </v-col>
 
 
-    <v-col v-if="this.$route.path !== '/'">
+    <v-col>
         <router-view></router-view>
     </v-col>
   </v-container>
