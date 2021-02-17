@@ -5,7 +5,7 @@
       <v-row justify="center">
         <v-avatar color="#FF2B2B"  size="256" style="z-index: 3200; margin-bottom: -16px;">
           <v-avatar size="250">
-            <v-img src="assets/Profile.jpeg"></v-img>
+            <v-img src="assets/Profile.webp"></v-img>
           </v-avatar>
         </v-avatar>
       </v-row>
