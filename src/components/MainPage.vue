@@ -3,7 +3,7 @@
 
     <v-col>
       <v-row justify="center">
-        <v-avatar color="#FF2B2B"  size="256" style="z-index: 3200; margin-bottom: -16px; border-color: #FF2B2B; border-width: 2px">
+        <v-avatar color="#FF2B2B"  size="256" style="z-index: 3200; margin-bottom: -16px;">
           <v-img  src="assets/Profile.jpeg"></v-img>
         </v-avatar>
       </v-row>
@@ -62,7 +62,7 @@
       </v-card>
 
 
-      <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="248" min-height="248">
+      <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="247" min-height="248">
         <v-card-title><template><v-icon>mdi-pin</v-icon></template> Pinned Items</v-card-title>
 
         <v-card-text>
