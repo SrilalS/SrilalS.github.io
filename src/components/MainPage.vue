@@ -46,6 +46,7 @@
                 dark
                 large
                 target="_blank"
+                rel="noreferrer noopener"
                 href="https://medium.com/@srilalsachintha"
             >
               Articles
@@ -59,6 +60,7 @@
                 dark
                 large
                 target="_blank"
+                rel="noreferrer noopener"
                 href="https://github.com/SrilalS"
             >
               Github
@@ -71,6 +73,7 @@
                 dark
                 large
                 target="_blank"
+                rel="noreferrer noopener"
                 href="https://www.linkedin.com/in/srilalsachintha/"
             >
               LinkedIn
@@ -92,8 +95,8 @@
                 With Over 10,000 Download in Google Play
               </v-card-text>
               <v-card-actions>
-                <v-btn target="_blank" href="https://play.google.com/store/apps/details?id=com.srilals.umusicv2">Google Play</v-btn>
-                <v-btn target="_blank" href="https://github.com/SrilalS/U-Music">GitHub</v-btn>
+                <v-btn rel="noreferrer noopener" target="_blank" href="https://play.google.com/store/apps/details?id=com.srilals.umusicv2">Google Play</v-btn>
+                <v-btn rel="noreferrer noopener" target="_blank" href="https://github.com/SrilalS/U-Music">GitHub</v-btn>
               </v-card-actions>
             </v-card>
             <v-card min-width="300" color="#FF2B2B" style="margin: 2px">
@@ -102,7 +105,7 @@
                 My Own OpenSource Portfolio Template<br>Using VueJs and Vuetify ( This Site! )
               </v-card-text>
               <v-card-actions>
-                <v-btn target="_blank" href="https://github.com/SrilalS/SrilalS.github.io">GitHub</v-btn>
+                <v-btn rel="noreferrer noopener" target="_blank" href="https://github.com/SrilalS/SrilalS.github.io">GitHub</v-btn>
               </v-card-actions>
             </v-card>
           </v-row>
