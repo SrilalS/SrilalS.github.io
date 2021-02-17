@@ -84,7 +84,7 @@
 
 
       <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="256" min-height="248">
-        <v-card-title style="font-size: 32px; color: #FF2B2B"><template><v-icon color="#FF2B2B">mdi-pin</v-icon></template>Pinned</v-card-title>
+        <v-card-title style="font-size: 32px; color: #FF2B2B">Pinned</v-card-title>
 
         <v-card-text>
           <v-row no-gutters justify="space-around">
