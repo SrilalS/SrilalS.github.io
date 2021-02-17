@@ -79,10 +79,9 @@
               </v-card-actions>
             </v-card>
             <v-card min-width="300" color="#FF2B2B" style="margin: 2px">
-              <v-card-title>This Website</v-card-title>
+              <v-card-title>BloodyFX</v-card-title>
               <v-card-text>
-                This is Made using Vue and Vuetify.<br>
-                Available under GPL-V3
+                My Own OpenSource Portfolio Template<br>Using VueJs and Vuetify ( This Site! )
               </v-card-text>
               <v-card-actions>
                 <v-btn>GitHub</v-btn>
