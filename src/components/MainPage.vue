@@ -85,12 +85,12 @@
 
 
       <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="256" min-height="248">
-        <v-row justify="space-around" align="space-around">
+        <v-row justify="space-around">
           <v-card-title style="font-size: 32px;">Pinned</v-card-title>
           <v-switch
               v-model="$vuetify.theme.dark"
               inset
-              label="Dark/Light"
+              label="Dark Theme"
           ></v-switch>
         </v-row>
 
