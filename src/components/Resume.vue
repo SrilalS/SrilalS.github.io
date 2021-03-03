@@ -1,6 +1,6 @@
 <template>
   <v-card style="height: 92vh; overflow-y: auto">
-    <v-card-title style="font-size: 32px; color: #FF2B2B">Resume</v-card-title>
+    <v-card-title style="font-size: 32px;">Resume</v-card-title>
 
     <v-card-text>
       <v-card flat>

@@ -3,22 +3,23 @@
 
     <v-col>
       <v-row justify="center">
-        <v-avatar color="#FF2B2B"  size="256" style="z-index: 3200; margin-bottom: -16px;">
+        <v-avatar color="primary"  size="256" style="z-index: 3200; margin-bottom: -16px;">
           <v-avatar size="250">
             <v-img src="assets/Profile.webp"></v-img>
           </v-avatar>
         </v-avatar>
       </v-row>
       <v-card>
-        <v-col style="color: #FF2B2B;text-align: center;">
-          <h1 class="nameTitle" style="font-size: 64px">Srilal Sachintha</h1>
+        <v-col style="text-align: center;">
+          <h1 style="font-size: 64px">Srilal Sachintha</h1>
           <h2>Developer | Open-Source Enthusiast | Thinker</h2>
           <v-row no-gutters justify="center">
+
             <v-btn
                 :max-width="btnWidth"
                 :min-width="btnWidth"
                 style="margin: 2px"
-                color="#FF2B2B"
+                color="primary"
                 dark
                 large
                 to="/"
@@ -30,7 +31,7 @@
                 :max-width="btnWidth"
                 :min-width="btnWidth"
                 style="margin: 2px"
-                color="#FF2B2B"
+                color="primary"
                 dark
                 large
                 to="/resume"
@@ -42,7 +43,7 @@
                 :max-width="btnWidth"
                 :min-width="btnWidth"
                 style="margin: 2px"
-                color="#FF2B2B"
+                color="primary"
                 dark
                 large
                 target="_blank"
@@ -56,7 +57,7 @@
                 :max-width="btnWidth"
                 :min-width="btnWidth"
                 style="margin: 2px"
-                color="#FF2B2B"
+                color="primary"
                 dark
                 large
                 target="_blank"
@@ -69,7 +70,7 @@
                 :max-width="btnWidth"
                 :min-width="btnWidth"
                 style="margin: 2px"
-                color="#FF2B2B"
+                color="primary"
                 dark
                 large
                 target="_blank"
@@ -84,31 +85,42 @@
 
 
       <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="256" min-height="248">
-        <v-card-title style="font-size: 32px; color: #FF2B2B">Pinned</v-card-title>
+        <v-row justify="space-around" align="space-around">
+          <v-card-title style="font-size: 32px;">Pinned</v-card-title>
+          <v-switch
+              v-model="$vuetify.theme.dark"
+              inset
+              label="Dark/Light"
+          ></v-switch>
+        </v-row>
+
 
         <v-card-text>
-          <v-row no-gutters justify="space-around">
-            <v-card min-width="300" color="#FF2B2B" style="margin: 2px">
-              <v-card-title>U Music</v-card-title>
-              <v-card-text>
-                An OpenSource Music Player Build in Flutter.<br>
-                With Over 10,000 Download in Google Play
-              </v-card-text>
-              <v-card-actions>
-                <v-btn rel="noreferrer noopener" target="_blank" href="https://play.google.com/store/apps/details?id=com.srilals.umusicv2">Google Play</v-btn>
-                <v-btn rel="noreferrer noopener" target="_blank" href="https://github.com/SrilalS/U-Music">GitHub</v-btn>
-              </v-card-actions>
-            </v-card>
-            <v-card min-width="300" color="#FF2B2B" style="margin: 2px">
-              <v-card-title>BloodyFX</v-card-title>
-              <v-card-text>
-                My Own OpenSource Portfolio Template<br>Using VueJs and Vuetify ( This Site! )
-              </v-card-text>
-              <v-card-actions>
-                <v-btn rel="noreferrer noopener" target="_blank" href="https://github.com/SrilalS/SrilalS.github.io">GitHub</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-row>
+          <v-col>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title>U Music</v-list-item-title>
+                <v-list-item-subtitle>An OpenSource Music Player Build in Flutter.<br>
+                  With Over 10,000 Download in Google Play</v-list-item-subtitle>
+              </v-list-item-content>
+              <v-list-item-action>
+                <v-btn outlined color="primary" rel="noreferrer noopener" target="_blank" href="https://play.google.com/store/apps/details?id=com.srilals.umusicv2">Google Play</v-btn>
+                </v-list-item-action>
+              <v-list-item-action>
+                <v-btn outlined color="primary" rel="noreferrer noopener" target="_blank" href="https://github.com/SrilalS/U-Music">GitHub</v-btn>
+              </v-list-item-action>
+            </v-list-item>
+            <v-list-item>
+              <v-list-item-content>
+                <v-list-item-title>BloodyFX</v-list-item-title>
+                <v-list-item-subtitle>My Own OpenSource Portfolio Template<br>Using VueJs and Vuetify ( This Site! )</v-list-item-subtitle>
+              </v-list-item-content>
+              <v-list-item-action>
+                <v-btn outlined color="primary" rel="noreferrer noopener" target="_blank" href="https://github.com/SrilalS/SrilalS.github.io">GitHub</v-btn>
+              </v-list-item-action>
+            </v-list-item>
+
+          </v-col>
         </v-card-text>
       </v-card>
     </v-col>

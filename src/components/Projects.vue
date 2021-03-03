@@ -1,14 +1,14 @@
 <template>
   <v-card style="height: 92vh; overflow-y: auto">
-    <v-card-title style="font-size: 32px; color: #FF2B2B">Projects</v-card-title>
+    <v-card-title style="font-size: 32px;">Projects</v-card-title>
     <v-card-text>
       <v-col>
         <v-card style="margin-bottom: 4px" outlined v-for="(project,i) in Projects" :key="i">
           <v-card-title>{{project.Name}}</v-card-title>
           <v-card-text>{{project.Description}}</v-card-text>
           <v-card-actions>
-            <v-btn outlined rel="noreferrer noopener" target="_blank" dark color="#FF2B2B" :href="project.GitHub">GitHub</v-btn>
-            <v-btn outlined rel="noreferrer noopener" target="_blank" v-if="project.LINKS.LINK !==''" dark color="#FF2B2B" :href="project.LINKS.LINK">{{ project.LINKS.Text }}</v-btn>
+            <v-btn outlined rel="noreferrer noopener" target="_blank" dark color="primary" :href="project.GitHub">GitHub</v-btn>
+            <v-btn outlined rel="noreferrer noopener" target="_blank" v-if="project.LINKS.LINK !==''" dark color="primary" :href="project.LINKS.LINK">{{ project.LINKS.Text }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>

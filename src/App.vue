@@ -42,12 +42,12 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FF2B2B;
+  background: #919191;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #ffffff;
 }
 
 </style>
