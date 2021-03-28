@@ -1,6 +1,5 @@
 <template>
-  <v-container style="align-items: start" fill-height fluid>
-
+  <v-container :class="!$vuetify.theme.isDark ? 'ThemeBackColorLight':''" style="align-items: start;" fill-height fluid>
     <v-col>
       <v-row justify="center">
         <v-avatar color="primary"  size="256" style="z-index: 3200; margin-bottom: -16px;">
@@ -11,7 +10,7 @@
       </v-row>
       <v-card>
         <v-col style="text-align: center;">
-          <h1 style="font-size: 64px">Srilal Sachintha</h1>
+          <h1 style="font-size: 48px;margin-top: 8px">Srilal Sachintha</h1>
           <h2>Developer | Open-Source Enthusiast | Thinker</h2>
           <v-row no-gutters justify="center">
 
@@ -144,5 +143,9 @@ export default {
 </script>
 
 <style scoped>
+
+.ThemeBackColorLight{
+  background-color: lightgray !important;
+}
 
 </style>
