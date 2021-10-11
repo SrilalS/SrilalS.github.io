@@ -56,12 +56,12 @@ export default {
     return {
       SideBar:true,
       SocialLinks:[
-        { icon: 'github', link:''},
-        { icon: 'linkedin', link:''},
-        { icon: 'email', link:''},
-        { icon: 'stack-overflow', link:''},
-        { icon: 'twitter', link:''},
-        { icon: 'facebook', link:''},
+        { icon: 'github', link:'https://github.com/SrilalS'},
+        { icon: 'linkedin', link:'https://www.linkedin.com/in/srilalsachintha/'},
+        { icon: 'email', link:'mailto:srilalsachintha@gmail.com'},
+        { icon: 'stack-overflow', link:'https://stackoverflow.com/users/6143971/srilal-sachintha'},
+        { icon: 'twitter', link:'https://twitter.com/SrilalSS'},
+        { icon: 'facebook', link:'https://www.facebook.com/Srilal.Sachintha/'},
       ]
     }
   }

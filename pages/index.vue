@@ -9,7 +9,7 @@
         </h1>
         <h1 class="text-h4 CoolGrey">A Developer</h1>
         <p class="CoolGrey ">I’m a software engineer specializing in building exceptional <br> digital experiences. Currently, I’m focused on building <br>accessible, human-centered products (..for now)</p>
-        <v-btn x-large color="white" light outlined>
+        <v-btn to="/projects" x-large color="white" light outlined>
           Checkout My Work!
         </v-btn>
       </v-col>
