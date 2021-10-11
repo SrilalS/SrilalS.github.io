@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/certificates", {data:[{}],fetch:{},mutations:void 0});
