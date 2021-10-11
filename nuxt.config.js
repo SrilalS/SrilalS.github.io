@@ -41,7 +41,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/sitemap',
+
   ],
+  sitemap: {
+    hostname: 'https://srilalsachintha.me',
+    gzip: true,
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
