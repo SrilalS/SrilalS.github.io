@@ -10,14 +10,13 @@
       </v-row>
       <v-card>
         <v-col style="text-align: center;">
-          <h1 style="font-size: 48px;margin-top: 8px">Srilal Sachintha</h1>
-          <h2>Developer | Open-Source Enthusiast | Thinker</h2>
+          <h1 class="mt-4 font-weight-bold">Srilal Sachintha</h1>
+          <h3>Developer | Learner</h3>
           <v-row no-gutters justify="center">
-
             <v-btn
                 :max-width="btnWidth"
                 :min-width="btnWidth"
-                style="margin: 2px"
+                class="ma-1"
                 color="primary"
                 dark
                 large
@@ -29,7 +28,7 @@
             <v-btn
                 :max-width="btnWidth"
                 :min-width="btnWidth"
-                style="margin: 2px"
+                class="ma-1"
                 color="primary"
                 dark
                 large
@@ -41,7 +40,7 @@
             <v-btn
                 :max-width="btnWidth"
                 :min-width="btnWidth"
-                style="margin: 2px"
+                class="ma-1"
                 color="primary"
                 dark
                 large
@@ -55,7 +54,7 @@
             <v-btn
                 :max-width="btnWidth"
                 :min-width="btnWidth"
-                style="margin: 2px"
+                class="ma-1"
                 color="primary"
                 dark
                 large
@@ -68,7 +67,7 @@
             <v-btn
                 :max-width="btnWidth"
                 :min-width="btnWidth"
-                style="margin: 2px"
+                class="ma-1"
                 color="primary"
                 dark
                 large
@@ -85,7 +84,7 @@
 
       <v-card style="margin-top: 16px" class="hidden-md-and-down" max-height="256" min-height="248">
         <v-row justify="space-around">
-          <v-card-title style="font-size: 32px;">Pinned</v-card-title>
+          <v-card-title>Pinned</v-card-title>
           <v-switch
               v-model="$vuetify.theme.dark"
               inset
@@ -137,6 +136,9 @@ export default {
   data(){
     return{
       btnWidth: 100,
+      NavButtons:[
+        {title:'Projects', to:'/'}
+      ]
     }
   }
 }
