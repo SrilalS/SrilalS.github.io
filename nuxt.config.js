@@ -3,6 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -51,13 +52,12 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    //customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,
       themes: {
         dark: {
           primary: '#FF003F',
-          //primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
@@ -69,10 +69,24 @@ export default {
     }
   },
 
+  /*loadingIndicator: {
+    name: 'three-bounce',
+    color: 'white',
+    background: '#0a192f'
+  },*/
+
+  loadingIndicator: '@/components/loadingIndicator.html',
+  loading: {
+    color: 'white',
+    height: '3px'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    analyze: true,
   },
   generate: {
+    analyze: true,
     dir:'docs'
   }
 }

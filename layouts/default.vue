@@ -68,7 +68,11 @@ export default {
 }
 </script>
 <style>
+html{
+  overflow: auto !important;
+}
 body{
+  overflow: auto !important;
   background-color: #0a192f !important;
 }
 .DarkBackground{
