@@ -1,5 +1,6 @@
 <template>
-  <v-app class="DarkBackground" dark>
+
+  <v-app v-if="isLoaded" class="DarkBackground" dark>
     <v-app-bar fixed app class="Acrylic" flat>
       <v-spacer></v-spacer>
 
@@ -12,14 +13,14 @@
       <v-btn href="https://github.com/SrilalS" target="_blank" class="mr-1 ml-1 HoverButton" outlined><v-icon class="mr-1">mdi-github</v-icon>GitHub</v-btn>
       <v-btn class="mr-1 ml-1 HoverButton" outlined><v-icon class="mr-1">mdi-file-document</v-icon>CV</v-btn>
     </v-app-bar>
-    <v-main class="DarkBackground">
+    <v-main class="DarkBackground SideBarAnim">
         <Nuxt/>
     </v-main>
 
     <v-navigation-drawer
       v-model="SideBar"
       app
-      class="Acrylic elevation-0"
+      class="Acrylic elevation-0 "
       permanent
       mini-variant
       floating
@@ -48,13 +49,18 @@
 
     </v-navigation-drawer>
   </v-app>
+
 </template>
 
 <script>
 export default {
+  mounted() {
+    this.isLoaded = true;
+  },
   data () {
     return {
       SideBar:true,
+      isLoaded: false,
       SocialLinks:[
         { icon: 'github', link:'https://github.com/SrilalS'},
         { icon: 'linkedin', link:'https://www.linkedin.com/in/srilalsachintha/'},
@@ -67,14 +73,35 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+</style>
 <style>
 html{
   overflow: auto !important;
+  background-color: #0a192f !important;
 }
 body{
   overflow: auto !important;
   background-color: #0a192f !important;
+
 }
+.theme--dark.v-application{
+  background: #0a192f !important;
+}
+.SideBarAnim{
+  animation: 1s ease-out 0s 1 FadeIn;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 .DarkBackground{
   background-color: #0a192f;
 }
