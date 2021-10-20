@@ -19,7 +19,7 @@
           <v-card elevation="8" class="pa-2 ma-2 rounded-circle CoolGreyBack" color="#ccd6f6">
             <v-avatar size="256">
               <div class="CyberContainer">
-                <v-img class="mt-1" src="/profile.jpeg" alt="CyberpunkProfile"></v-img>
+                <v-img class="mt-1" src="/profile.webp" alt="CyberpunkProfile"></v-img>
                 <span class="overlay"></span>
               </div>
             </v-avatar>
