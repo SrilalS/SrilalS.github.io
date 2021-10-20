@@ -128,7 +128,7 @@ export default {
   animation-iteration-count: infinite;
   animation-name: glitch;
   animation-direction: alternate;
-  background-image: url('/profile.jpeg');
+  background-image: url('/profile.webp');
   transform: rotate(-2deg);
   position: absolute;
   top: 0;
