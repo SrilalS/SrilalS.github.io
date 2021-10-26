@@ -6,11 +6,11 @@
       <v-spacer></v-spacer>
       <div class="hidden-md-and-down">
         <v-btn active-class="ActiveNavButton" text to="/" class="NavButton ml-1 mr-1">About</v-btn>
-        <v-btn active-class="ActiveNavButton" text to="projects" class="NavButton ml-1 mr-1">Projects</v-btn>
-        <v-btn active-class="ActiveNavButton" text to="technologies" class="NavButton ml-1 mr-1">Technologies</v-btn>
+        <v-btn active-class="ActiveNavButton" text to="/projects" class="NavButton ml-1 mr-1">Projects</v-btn>
+        <v-btn active-class="ActiveNavButton" text to="/technologies" class="NavButton ml-1 mr-1">Technologies</v-btn>
         <!--v-btn active-class="ActiveNavButton" text to="experience" class="NavButton">Experience</v-btn-->
-        <v-btn active-class="ActiveNavButton" text to="certificates" class="NavButton ml-1 mr-1">Certificates</v-btn>
-        <v-btn active-class="ActiveNavButton" text to="articles" class="NavButton ml-1 mr-1">Articles</v-btn>
+        <v-btn active-class="ActiveNavButton" text to="/certificates" class="NavButton ml-1 mr-1">Certificates</v-btn>
+        <v-btn active-class="ActiveNavButton" text to="/articles" class="NavButton ml-1 mr-1">Articles</v-btn>
         <v-btn href="https://github.com/SrilalS" target="_blank" class="mr-1 ml-1 HoverButton" outlined><v-icon class="mr-1">mdi-github</v-icon>GitHub</v-btn>
         <v-btn class="mr-1 ml-1 HoverButton" outlined><v-icon class="mr-1">mdi-file-document</v-icon>CV</v-btn>
       </div>
@@ -62,11 +62,11 @@
       class="Acrylic hidden-lg-and-up">
       <v-col>
         <v-btn block active-class="ActiveNavButton" text to="/" class="NavButton ma-1">About</v-btn>
-        <v-btn block active-class="ActiveNavButton" text to="projects" class="NavButton ma-1">Projects</v-btn>
-        <v-btn block active-class="ActiveNavButton" text to="technologies" class="NavButton ma-1">Technologies</v-btn>
+        <v-btn block active-class="ActiveNavButton" text to="/projects" class="NavButton ma-1">Projects</v-btn>
+        <v-btn block active-class="ActiveNavButton" text to="/technologies" class="NavButton ma-1">Technologies</v-btn>
         <!--v-btn block active-class="ActiveNavButton" text to="experience" class="NavButton ma-1">Experience</v-btn-->
-        <v-btn block active-class="ActiveNavButton" text to="certificates" class="NavButton ma-1">Certificates</v-btn>
-        <v-btn block active-class="ActiveNavButton" text to="articles" class="NavButton ma-1">Articles</v-btn>
+        <v-btn block active-class="ActiveNavButton" text to="/certificates" class="NavButton ma-1">Certificates</v-btn>
+        <v-btn block active-class="ActiveNavButton" text to="/articles" class="NavButton ma-1">Articles</v-btn>
         <v-btn block href="https://github.com/SrilalS" target="_blank" class="ma-1 HoverButton" outlined><v-icon class="ma-1">mdi-github</v-icon>GitHub</v-btn>
         <v-btn block class="mr-1 ml-1 HoverButton" outlined><v-icon class="ma-1">mdi-file-document</v-icon>CV</v-btn>
       </v-col>

@@ -2,7 +2,7 @@
   <v-container>
     <v-row no-gutters justify="center">
       <v-card hover ripple :href="item.link" target="_blank" width="256" class="ma-4" v-for="(item,i) in Articles" :key="i">
-        <v-img contain :src="item.img"></v-img>
+        <v-img :src="item.img"></v-img>
         <v-card-subtitle class="pb-0 pt-2">{{item.date}}</v-card-subtitle>
         <v-card-title class="pt-0" style="word-break: break-word">{{ item.title }}</v-card-title>
       </v-card>
