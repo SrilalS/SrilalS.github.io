@@ -1,10 +1,10 @@
 <template>
   <v-container>
-    <v-row no-gutters>
-      <h3 class="text-h6">Technologies I Have Experience in</h3>
+    <v-row justify="center" no-gutters>
+      <h3 class="text-h6">Technologies I Work with</h3>
     </v-row>
 
-    <v-row class="mt-4" no-gutters justify="center" justify-sm="start">
+    <v-row class="mt-4" no-gutters justify="center">
       <v-alert v-for="(tech,i) in Technologies" :key="i" outlined height="180" width="180" class="pa-4 ma-2">
         <v-row justify="center" no-gutters>
           <v-img height="128" contain width="128" :src="tech.icon"></v-img>
@@ -17,11 +17,11 @@
       </v-alert>
     </v-row>
 
-    <v-row no-gutters>
-      <h3 class="text-h6 mt-8">OSes I Have Experience in</h3>
+    <v-row justify="center" no-gutters>
+      <h3 class="text-h6 mt-8">OSes I Use</h3>
     </v-row>
 
-    <v-row class="mt-4" no-gutters justify="center" justify-sm="start">
+    <v-row class="mt-4" no-gutters justify="center">
       <v-alert v-for="(os,i) in OS" :key="i" outlined height="180" width="180" class="pa-4 ma-2">
         <v-row justify="center" no-gutters>
           <v-img height="128" contain width="128" :src="os.icon"></v-img>
@@ -34,11 +34,11 @@
       </v-alert>
     </v-row>
 
-    <v-row no-gutters>
-      <h3 class="text-h6 mt-8">Programming Languages I Have Experience in</h3>
+    <v-row justify="center" no-gutters>
+      <h3 class="text-h6 mt-8">Programming Languages I Use</h3>
     </v-row>
 
-    <v-row class="mt-4" no-gutters justify="center" justify-sm="start">
+    <v-row class="mt-4" no-gutters justify="center">
       <v-alert v-for="(lng,i) in Lang" :key="i" outlined height="180" width="180" class="pa-4 ma-2">
         <v-row justify="center" no-gutters>
           <v-img height="128" contain width="128" :src="lng.icon"></v-img>

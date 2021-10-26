@@ -43,7 +43,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/sitemap',
-
+    '@nuxtjs/axios'
   ],
   sitemap: {
     hostname: 'https://srilalsachintha.me',

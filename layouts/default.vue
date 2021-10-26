@@ -2,16 +2,22 @@
 
   <v-app v-if="isLoaded" class="DarkBackground" dark>
     <v-app-bar fixed app class="Acrylic" flat>
+      <v-app-bar-title class="hidden-lg-and-up">{{ $route.name.toUpperCase() }}</v-app-bar-title>
       <v-spacer></v-spacer>
+      <div class="hidden-md-and-down">
+        <v-btn active-class="ActiveNavButton" text to="/" class="NavButton ml-1 mr-1">About</v-btn>
+        <v-btn active-class="ActiveNavButton" text to="projects" class="NavButton ml-1 mr-1">Projects</v-btn>
+        <v-btn active-class="ActiveNavButton" text to="technologies" class="NavButton ml-1 mr-1">Technologies</v-btn>
+        <!--v-btn active-class="ActiveNavButton" text to="experience" class="NavButton">Experience</v-btn-->
+        <v-btn active-class="ActiveNavButton" text to="certificates" class="NavButton ml-1 mr-1">Certificates</v-btn>
+        <v-btn active-class="ActiveNavButton" text to="articles" class="NavButton ml-1 mr-1">Articles</v-btn>
+        <v-btn href="https://github.com/SrilalS" target="_blank" class="mr-1 ml-1 HoverButton" outlined><v-icon class="mr-1">mdi-github</v-icon>GitHub</v-btn>
+        <v-btn class="mr-1 ml-1 HoverButton" outlined><v-icon class="mr-1">mdi-file-document</v-icon>CV</v-btn>
+      </div>
 
-      <v-btn active-class="ActiveNavButton" text to="/" class="NavButton">About</v-btn>
-      <v-btn active-class="ActiveNavButton" text to="technologies" class="NavButton">Technologies</v-btn>
-      <!--v-btn active-class="ActiveNavButton" text to="experience" class="NavButton">Experience</v-btn-->
-      <v-btn active-class="ActiveNavButton" text to="projects" class="NavButton">Projects</v-btn>
-      <v-btn active-class="ActiveNavButton" text to="certificates" class="NavButton">Certificates</v-btn>
-      <v-btn active-class="ActiveNavButton" text to="articles" class="NavButton">Articles</v-btn>
-      <v-btn href="https://github.com/SrilalS" target="_blank" class="mr-1 ml-1 HoverButton" outlined><v-icon class="mr-1">mdi-github</v-icon>GitHub</v-btn>
-      <v-btn class="mr-1 ml-1 HoverButton" outlined><v-icon class="mr-1">mdi-file-document</v-icon>CV</v-btn>
+      <v-btn @click="MobileMenu = true" icon class="hidden-lg-and-up">
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-main class="DarkBackground SideBarAnim">
         <Nuxt/>
@@ -48,6 +54,23 @@
       </template>
 
     </v-navigation-drawer>
+
+    <v-navigation-drawer
+      v-model="MobileMenu"
+      app
+      right
+      class="Acrylic hidden-lg-and-up">
+      <v-col>
+        <v-btn block active-class="ActiveNavButton" text to="/" class="NavButton ma-1">About</v-btn>
+        <v-btn block active-class="ActiveNavButton" text to="projects" class="NavButton ma-1">Projects</v-btn>
+        <v-btn block active-class="ActiveNavButton" text to="technologies" class="NavButton ma-1">Technologies</v-btn>
+        <!--v-btn block active-class="ActiveNavButton" text to="experience" class="NavButton ma-1">Experience</v-btn-->
+        <v-btn block active-class="ActiveNavButton" text to="certificates" class="NavButton ma-1">Certificates</v-btn>
+        <v-btn block active-class="ActiveNavButton" text to="articles" class="NavButton ma-1">Articles</v-btn>
+        <v-btn block href="https://github.com/SrilalS" target="_blank" class="ma-1 HoverButton" outlined><v-icon class="ma-1">mdi-github</v-icon>GitHub</v-btn>
+        <v-btn block class="mr-1 ml-1 HoverButton" outlined><v-icon class="ma-1">mdi-file-document</v-icon>CV</v-btn>
+      </v-col>
+    </v-navigation-drawer>
   </v-app>
 
 </template>
@@ -60,6 +83,7 @@ export default {
   data () {
     return {
       SideBar:true,
+      MobileMenu:false,
       isLoaded: false,
       SocialLinks:[
         { icon: 'github', link:'https://github.com/SrilalS'},
@@ -80,12 +104,31 @@ export default {
 html{
   overflow: auto !important;
   background-color: #0a192f !important;
+
 }
 body{
   overflow: auto !important;
   background-color: #0a192f !important;
-
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #183056
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
 .theme--dark.v-application{
   background: #0a192f !important;
 }

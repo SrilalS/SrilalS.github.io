@@ -4,7 +4,20 @@
 
 <script>
 export default {
-  name: "projects"
+  name: "projects",
+  data(){
+    return{
+      Projects:[
+        {
+          Name:'',
+          Image:'',
+          Link:'',
+          Desc:'',
+          
+        }
+      ],
+    }
+  }
 }
 </script>
 

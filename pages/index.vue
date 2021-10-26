@@ -123,7 +123,7 @@ export default {
 }
 .overlay{
   display: block;
-  animation-duration: 2.5s;
+  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-name: glitch;
