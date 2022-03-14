@@ -80,8 +80,6 @@ export default {
         { name:'NodeJs', icon:'https://cdn.svgporn.com/logos/nodejs-icon.svg'},
         { name:'.Net', icon:'https://cdn.svgporn.com/logos/dotnet.svg'},
         { name:'PostMan', icon:'https://cdn.svgporn.com/logos/postman-icon.svg'},
-        { name:'Firebase', icon:'https://cdn.svgporn.com/logos/firebase.svg'},
-        { name:'Firebase', icon:'https://cdn.svgporn.com/logos/firebase.svg'},
       ],
       OS:[
         { name:'Linux', icon:'https://cdn.svgporn.com/logos/linux-tux.svg'},
